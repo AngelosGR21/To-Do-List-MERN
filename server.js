@@ -9,6 +9,7 @@ const connection = require("./db/connection");
 const tasks = require("./routes/tasks");
 
 //middleware
+app.use(express.json());
 app.use("/api/tasks", tasks);
 
 //server connection
