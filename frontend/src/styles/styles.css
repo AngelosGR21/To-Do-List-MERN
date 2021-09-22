@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#845ec2), color-stop(#7862c7), color-stop(#6b66ca), color-stop(#5c6ace), color-stop(#4b6ed0), color-stop(#3775d0), color-stop(#207bcf), color-stop(#0081cc), color-stop(#0089c1), color-stop(#008dad), color-stop(#008f94), to(#008f7a));
+  background-image: linear-gradient(to right top, #845ec2, #7862c7, #6b66ca, #5c6ace, #4b6ed0, #3775d0, #207bcf, #0081cc, #0089c1, #008dad, #008f94, #008f7a);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root {
+  width: 100%;
+}
+
+.MuiList-root,
+.MuiList-padding {
+  margin: 0 auto !important;
+  background-color: white;
+  padding: 20px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 450px;
+}
+
+.listHeader {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 300 !important;
+  margin-bottom: 10px !important;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.MuiFormLabel-root,
+.MuiInputLabel-root {
+  color: red !important;
+}
+
+.MuiOutlinedInput-root,
+.MuiOutlinedInput-notchedOutline {
+  border-color: coral !important;
+}
+
+.deleteButton {
+  color: red !important;
+}
+/*# sourceMappingURL=styles.css.map */

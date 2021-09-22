@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap");
+
+@mixin center($direction: false) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @if ($direction) {
+    flex-direction: column;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-image: linear-gradient(
+    to right top,
+    #845ec2,
+    #7862c7,
+    #6b66ca,
+    #5c6ace,
+    #4b6ed0,
+    #3775d0,
+    #207bcf,
+    #0081cc,
+    #0089c1,
+    #008dad,
+    #008f94,
+    #008f7a
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  @include center();
+}
+
+#root {
+  width: 100%;
+}
+
+.MuiList-root,
+.MuiList-padding {
+  margin: 0 auto !important;
+  background-color: white;
+  padding: 20px !important;
+  @include center(true);
+  border-radius: 10px;
+  width: 90%;
+  max-width: 450px;
+}
+
+.listHeader {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 300 !important;
+  margin-bottom: 10px !important;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+// input styles
+.MuiFormLabel-root,
+.MuiInputLabel-root {
+  color: red !important;
+}
+
+.MuiOutlinedInput-root,
+.MuiOutlinedInput-notchedOutline {
+  border-color: coral !important;
+}
+
+.deleteButton {
+  color: red !important;
+}
